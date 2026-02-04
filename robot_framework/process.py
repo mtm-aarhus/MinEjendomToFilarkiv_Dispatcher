@@ -55,7 +55,7 @@ def process(orchestrator_connection: OrchestratorConnection, queue_element: Queu
     intern_exception = "intern færdigmelding"
     excel_extensions = {"xls", "xlsx", "xlsm", "xlsb"}
     queue_items = []
-    # --- processing -----------------------------------------------
+    # --- processing ----------------------------------------------
 
 
     for row in rows:
