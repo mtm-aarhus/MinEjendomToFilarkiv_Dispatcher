@@ -69,7 +69,7 @@ def process(orchestrator_connection: OrchestratorConnection, queue_element: Queu
         if any(word in title for word in remove_words):
             continue
 
-        # --- Determine securityClassificationLevel ----------------
+        # --- Determine securityClassificationLevel ---------------
         securityClassificationLevel = 0
 
         if intern_exception not in title:
