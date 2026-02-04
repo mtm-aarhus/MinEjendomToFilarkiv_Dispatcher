@@ -18,7 +18,7 @@ def process(orchestrator_connection: OrchestratorConnection, queue_element: Queu
 
     # Select candidates that meet your filter
     cur.execute("""
-        SELECT
+        SELECT TOP 3
             d.Id AS DocumentId,
             d.Title AS DocumentTitle,
             d.FileName,
@@ -34,7 +34,8 @@ def process(orchestrator_connection: OrchestratorConnection, queue_element: Queu
         JOIN MinEjendom_Cases c ON d.CaseId = c.Id
         WHERE c.IgnoreCase = 0
         AND (d.FilArkivFileId IS NULL AND d.MergedDocumentId IS NULL)
-        ORDER BY c.Id, d.Id;
+        ORDER BY c.Id, d.Id
+        LIMIT 3;
     """)
     rows = cur.fetchall()
     print(f"Fetched rows: {len(rows)}")
