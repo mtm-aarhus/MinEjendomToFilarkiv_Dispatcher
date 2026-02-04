@@ -109,7 +109,6 @@ def process(orchestrator_connection: OrchestratorConnection, queue_element: Queu
 
 
     # --- summary --------------------------------------------------
-
     print(f"Antal dokumenter der skal fjernes: {remove_count}")
     print(f"Antal dokumenter der skal låses pga. titel: {lock_word_count}")
     print(f"Antal dokumenter der skal låses pga. filtype (Excel): {lock_extension_count}")
