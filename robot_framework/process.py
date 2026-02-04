@@ -38,7 +38,7 @@ def process(orchestrator_connection: OrchestratorConnection, queue_element: Queu
     """)
     rows = cur.fetchall()
     print(f"Fetched rows: {len(rows)}")
-    
+
     # --- rules ----------------------------------------------------
     column_names = [desc[0] for desc in cur.description]
 
