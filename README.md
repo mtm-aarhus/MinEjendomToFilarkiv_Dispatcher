@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Robot-Framework V4
 
 This repo is meant to be used as a template for robots made for [OpenOrchestrator](https://github.com/itk-dev-rpa/OpenOrchestrator) v2.
@@ -60,3 +61,6 @@ The flow of the queue framework is sketched up in the following illustration:
 This template is also setup with flake8 and pylint linting in Github Actions.
 This workflow will trigger whenever you push your code to Github.
 The workflow is defined under `.github/workflows/Linting.yml`.
+=======
+# MinEjendomToFilarkiv_Dispatcher
+>>>>>>> a718fa3fb73cf1691fff6a2d9d8ee0e1777bca7f
